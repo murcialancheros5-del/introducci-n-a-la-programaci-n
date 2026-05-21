@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Empleo</title>
+</head>
+<body>
+    <form action="">
+        <h2>Datos personales basicos</h2>
+        <label for="NombreUsuario">Nombre Usuario:</label>
+        <input type="text" id="NombreUsuario" name="nombre" placeholder="Ej: Juan Perez">
+         <label for="Apellido">Apellido:</label>
+          <input type="text" id="Apellido" name="Apellido" placeholder="Ej: suarez">
+        <br><br>
+        <label for="CorreoUsuario">Correo electronico:</label>
+        <input type="email" id="CorreoUsuario" name="email" placeholder="correo@ejemplo.com" required> 
+        <br><br>
+        <label for="Disponibilidad">Disponibilidad</label>
+        <input type="date" id="Disponibilidad" name="Fecha_disponibilidad">
+        <br><br>
+        <select name="Nivel Estudio " id="Nivel">
+                <option value="">--SELECCIONE UN OPCION--</option>
+                <option value="Pri">PRIMARIA</option>
+                <option value="Sec">SECUNDARIA</option>
+                <option value="Bach">BACHILLERATO</option>
+                <option value="Tec">TECNICO</option>
+                <option value="Uni">UNIVERSIDAD</option>
+            </select>
+            <br><br>
+            <label for="Años de experiencia">Años experiencia:</label>
+        <input type="number"id="Años de experiencia"name= "Año" min="0" max="50">
+        <br><br>
+        <input type="checkbox" id="Lenguajes de programacion" name="Lenguajes" required>
+        <label for="Lenguajes ">Python</label>
+        <input type="checkbox" id="Lenguajes de programacion" name="Lenguajes" required>
+        <label for="Lenguajes ">JavaScript</label>
+        <input type="checkbox" id="Lenguajes de programacion" name="Lenguajes" required>
+        <label for="Lenguajes ">Java</label>
+        <br><br>
+        <label for="Carta">Carta de presentación: </label>
+        <br>
+            
+        <textarea name="Carta" id="Carta" rows="4" cols="50" placeholder="Escribe aqui..."></textarea>
+        <br><br>
+
+        <button type="submit">Enviar Formualario</button>
+        </form>
+</body>
+</html>
