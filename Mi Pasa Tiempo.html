@@ -3,28 +3,64 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>  Pelicula preferida</title>
+    <title>Document</title>
 </head>
 <body>
-<form action="">
     <h2>Datos personales basicos</h2>
-        <label for="NombreUsuario">Nombre Usuario:</label>
-        <input type="text" id="NombreUsuario" name="nombre" placeholder="Andrea Murcia">
-        <br><br>
-        <label for="CorreoUsuario">Correo electronico:</label>
-        <input type="email" id="CorreoUsuario" name="email" placeholder="correo@ejemplo.com" required> 
-        </form>
-    <form action="">
+
+        <label for="nombreUsuario">Nombre de usuarios: </label>
+        <input type="text" id="nombreUsuario" name="nombre" placeholder="Andrea Murcia">
         <br>
-        <label for="pass">Contraseña:</label>
-        <input type="password" name="Clave" id="pass">
+        <label for="correoUsuario">Correo electronico: </label>
+        <input type="email" id="correoUsuario" name="email" placeholder="correo@ejemplo.com" required>
+    </form>
         <br><br>
+    <h2>Mi Pasatiempo</h2>
+     <img src="images2.jpg"  alt="Grey's Anatomy" width="100%" height="100%">
+    <h2>Tabla De Mi Pasatiempo</h2>
+    <table border="1" width="50%">
+        <thead>
+    <tr>
+                <th>Serie</th>
+                <th>Trailer</th>
+                <th>Calificacion</th>
+            </tr>
+            <br><br>
+        <p>Selecciona tu plan: </p>
+        <input type="radio" name="plan" id="Series" value="series">
+        <label for="Salir a conocer pueblitos">Salir a conocer pueblitos</label>
+        <input type="radio" name="plan" id="series" value="series">
+        <label for="series">Series</label>
+        <input type="radio" name="plan" id="Dormir" value="Dormir">
+        <label for="Dormir">Dormir</label>
+        <br><br>
+        </thead>
+        <tbody>
+            <tr>
+             <td><img src="images.webp" alt="Grey's Anatomy" title="Grey's Anatomy" width="100%" height="100%"></td>
+            <td><iframe src="https://www.youtube.com/embed/GKyvMFkuCog?si=3OO0O9xwWEt6cWS9" frameborder="0" width="300px" height="280px" allowfullscreen></iframe></td>
+            <td>Anatomía de Grey" es una serie de drama médico estadounidense que sigue la vida profesional y personal de los médicos del Grey Sloan Memorial Hospital en Seattle.la serie se estrenó el 27 de marzo de 2005 en ABC y ha alcanzado 22 temporadas y más de 470 episodios hasta la fecha </td>
+            </tr>
+            <tr>
+            <br><br>
+    </form action="">
+        <h2>Textarea y Selects</h2>
+
+        <label for="Series">¿Series?</label>
+        <select name="pais" id="pais">
+            <option value="">--SELECCIONE UN OPCION--</option>
+            <option value="CO">Coreanas </option>
+            <option value="AR">Colombianas</option>
+           
         </select>
-            <br>
-            <label for="Mensaje">Dejanos tu opinión: </label>
-            <br>
-            <textarea name="Mensaje" id="Mensaje" rows="4" cols="50" placeholder="Escribe aqui..."></textarea>
-            
-</form>
+        <br><br>
+    <label for="mensaje">Dejanos tu opinión: </label>
+        <br>
+        <textarea name="mensaje" id="mensaje" rows="4" cols="50" placeholder="Escribe aqui..."></textarea>   
+       
 </body>
+         <br><br>
+        <input type="checkbox" id="terminos" name="terminos" required>
+        <label for="terminos">Acepto terminos y condiciones</label>
+
 </html>
